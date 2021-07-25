@@ -17,8 +17,8 @@ import java.io.*;
 
 public class ComplementingAStrandOfDNA {
     public static void reverseComplement() {
-        try (FileReader reader = new FileReader("E:\\Programming\\Java\\Projects\\rosalind-problems\\src\\main\\java\\com\\hibernaut\\problems\\input.txt");
-             FileWriter writer = new FileWriter("E:\\Programming\\Java\\Projects\\rosalind-problems\\src\\main\\java\\com\\hibernaut\\problems\\output.txt")) {
+        try (FileReader reader = new FileReader("src/dataset/rosalind_revc.txt");
+             FileWriter writer = new FileWriter("src/result/rosalind_revc.txt")) {
             StringBuffer buffer = new StringBuffer();
             for (int c; (c = reader.read()) != -1; ) {
                 switch ((char) c) {
